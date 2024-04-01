@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.content {
+    margin: 30px auto;
+    width: 320px;
+    height: 568px;
+    overflow: hidden;
+    position: relative;
+}
+
+.start,
+.game,
+.over {
+    width: 320px;
+    height: 568px;
+    position: absolute;
+}
+
+.start>img,
+.game>img,
+.plank {
+    position: absolute;
+}
+
+.start {
+    /* display: none; */
+    background: url(./imgs/start_background.png);
+}
+
+.start .start_game {
+    cursor: pointer;
+    width: 200px;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.game {
+    display: none;
+    background: url(./imgs/game_background.png);
+}
+
+.plank {
+    height: 30px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.plank>div {
+    float: left;
+}
+
+.plank .score_wrap {
+    width: 110px;
+}
+
+.hp {
+    display: inline-block;
+}
+
+.hp ul,
+.hp li {
+    float: left;
+}
+
+.hp li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    background-color: red;
+}
+
+.over{
+    display: none;
+    position: absolute;
+}
+
+.consequence,
+.recur,
+.game_over{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.game_over{
+    width: 250px;
+    height: 250px;
+}
+
+.consequence,
+.recur{
+    width: 120px;
+    text-align: center;
+    top: 350px;
+    font-size: 28px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+.consequence{
+    text-align: center;
+    font-size: 22px;
+    top: 180px;
+}
